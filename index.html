@@ -3,9 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello Front-End</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Cats, and More Cats</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <div id="wrapper">
+    <div id="form-container">
+      <form id="search-form">
+        <div>
+          <!-- <label for="query">Search</label> -->
+          <input id="query">
+        </div>
+        <input id="go-button" type="submit" value="search" class="btn">
+      </form>
+    </div>
+    <div id="slideshow-container">
+      <div id="result"></div>
+      <input type="button" value="stop" id="stop-button" class="btn">
+    </div>
+  </div>
+  <script src="/js/script.js"></script>
 </body>
 </html>
